@@ -1,18 +1,13 @@
 <div align="center">
-  <img width="1200" height="475" alt="DigitScope Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-  
-  <h1>DigitScope</h1>
-  <p>Interactive playground to draw digits, visualize a CNN’s activations, and see prediction confidence in real time.</p>
+<img width="1200" height="400" alt="DigitScope Banner" src="digitscope-banner.svg" />
 
+<br><br>
   <p>
     <!-- Stack Badges -->
     <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white" />
     <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" />
     <img alt="Vite" src="https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white" />
     <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-CDN-06B6D4?logo=tailwindcss&logoColor=white" />
-  </p>
-  <p>
-    <!-- Tools Badges -->
     <img alt="Node.js" src="https://img.shields.io/badge/Node.js-%E2%89%A518-339933?logo=node.js&logoColor=white" />
     <img alt="npm" src="https://img.shields.io/badge/npm-9+-CB0000?logo=npm&logoColor=white" />
   </p>
