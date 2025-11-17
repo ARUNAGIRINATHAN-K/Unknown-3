@@ -1,0 +1,130 @@
+<svg viewBox="0 0 1200 475" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="475" fill="url(#bgGradient)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="475" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="475" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="475" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="475" stroke="#fff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="475" stroke="#fff" stroke-width="1"/>
+  </g>
+  
+  <!-- Neural network visualization on left -->
+  <g transform="translate(80, 120)">
+    <!-- Input layer -->
+    <circle cx="0" cy="0" r="8" fill="#3b82f6" opacity="0.8"/>
+    <circle cx="0" cy="30" r="8" fill="#3b82f6" opacity="0.8"/>
+    <circle cx="0" cy="60" r="8" fill="#3b82f6" opacity="0.8"/>
+    <circle cx="0" cy="90" r="8" fill="#3b82f6" opacity="0.8"/>
+    <circle cx="0" cy="120" r="8" fill="#3b82f6" opacity="0.8"/>
+    
+    <!-- Hidden layer 1 -->
+    <circle cx="80" cy="15" r="8" fill="#8b5cf6" opacity="0.8"/>
+    <circle cx="80" cy="45" r="8" fill="#8b5cf6" opacity="0.8"/>
+    <circle cx="80" cy="75" r="8" fill="#8b5cf6" opacity="0.8"/>
+    <circle cx="80" cy="105" r="8" fill="#8b5cf6" opacity="0.8"/>
+    
+    <!-- Hidden layer 2 -->
+    <circle cx="160" cy="30" r="8" fill="#a855f7" opacity="0.8"/>
+    <circle cx="160" cy="60" r="8" fill="#a855f7" opacity="0.8"/>
+    <circle cx="160" cy="90" r="8" fill="#a855f7" opacity="0.8"/>
+    
+    <!-- Output layer -->
+    <circle cx="240" cy="60" r="10" fill="#10b981" opacity="0.8" filter="url(#glow)"/>
+    
+    <!-- Connections (sample) -->
+    <line x1="8" y1="0" x2="72" y2="15" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+    <line x1="8" y1="30" x2="72" y2="45" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+    <line x1="8" y1="60" x2="72" y2="75" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+    <line x1="88" y1="15" x2="152" y2="30" stroke="#8b5cf6" stroke-width="1" opacity="0.3"/>
+    <line x1="88" y1="45" x2="152" y2="60" stroke="#8b5cf6" stroke-width="1" opacity="0.3"/>
+    <line x1="168" y1="60" x2="230" y2="60" stroke="#a855f7" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Digit "7" visualization on right -->
+  <g transform="translate(950, 120)">
+    <!-- Pixelated digit representation -->
+    <rect x="0" y="0" width="20" height="20" fill="#3b82f6" opacity="0.9"/>
+    <rect x="25" y="0" width="20" height="20" fill="#3b82f6" opacity="0.9"/>
+    <rect x="50" y="0" width="20" height="20" fill="#3b82f6" opacity="0.9"/>
+    <rect x="75" y="0" width="20" height="20" fill="#3b82f6" opacity="0.9"/>
+    <rect x="100" y="0" width="20" height="20" fill="#3b82f6" opacity="0.9"/>
+    
+    <rect x="75" y="25" width="20" height="20" fill="#8b5cf6" opacity="0.9"/>
+    <rect x="50" y="50" width="20" height="20" fill="#8b5cf6" opacity="0.9"/>
+    <rect x="50" y="75" width="20" height="20" fill="#a855f7" opacity="0.9"/>
+    <rect x="25" y="100" width="20" height="20" fill="#a855f7" opacity="0.9"/>
+    <rect x="25" y="125" width="20" height="20" fill="#c084fc" opacity="0.9"/>
+    <rect x="25" y="150" width="20" height="20" fill="#c084fc" opacity="0.9"/>
+  </g>
+  
+  <!-- Main title -->
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="url(#accentGradient)" text-anchor="middle" filter="url(#glow)">
+    DigitScope
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="22" fill="#94a3b8" text-anchor="middle">
+    Interactive CNN Visualization Playground
+  </text>
+  
+  <!-- Feature tags -->
+  <g transform="translate(380, 300)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="65" y="20" font-family="Arial, sans-serif" font-size="14" fill="#3b82f6" text-anchor="middle" font-weight="600">
+      Draw Digits
+    </text>
+  </g>
+  
+  <g transform="translate(530, 300)">
+    <rect x="0" y="0" width="140" height="30" rx="15" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="70" y="20" font-family="Arial, sans-serif" font-size="14" fill="#8b5cf6" text-anchor="middle" font-weight="600">
+      Live Predictions
+    </text>
+  </g>
+  
+  <g transform="translate(690, 300)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="65" y="20" font-family="Arial, sans-serif" font-size="14" fill="#10b981" text-anchor="middle" font-weight="600">
+      CNN Layers
+    </text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="350" cy="100" r="4" fill="#3b82f6" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="850" cy="380" r="4" fill="#8b5cf6" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="80" r="3" fill="#10b981" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
