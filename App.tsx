@@ -101,12 +101,12 @@ const App: React.FC = () => {
         <div className="min-h-screen bg-slate-900 font-sans p-4 sm:p-6 lg:p-8">
             <header className="mb-6 text-center">
                 <h1 className="text-4xl sm:text-5xl font-bold text-white tracking-tight">
-                    MNIST Neural Network <span className="text-cyan-400">Playground</span>
+                    Digit<span className="text-cyan-400">Scope</span>
                 </h1>
                 <p className="mt-2 text-slate-400 max-w-2xl mx-auto">
                     Draw a digit, see how a neural network "thinks", and adjust parameters to see their effect in real-time.
                 </p>
-                 <a href="https://github.com/google/generative-ai-docs/tree/main/site/en/gemini-api/docs/applications/prompt_gallery/apps/MNIST_Neural_Network_Playground" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-slate-400 hover:text-cyan-400 transition-colors">
+                 <a href="https://github.com/ARUNAGIRINATHAN-K/DigitScope" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-slate-400 hover:text-cyan-400 transition-colors">
                     <GithubIcon className="w-5 h-5" />
                     View on GitHub
                 </a>
